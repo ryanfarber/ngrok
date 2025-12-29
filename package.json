@@ -1,6 +1,6 @@
 {
   "name": "@ryanforever/ngrok",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ngrok wrapper",
   "main": "index.js",
   "scripts": {
@@ -22,5 +22,13 @@
   },
   "files": [
     "src"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanfarber/ngrok.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryanfarber/ngrok/issues"
+  },
+  "homepage": "https://github.com/ryanfarber/ngrok#readme"
 }
