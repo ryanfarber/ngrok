@@ -1,0 +1,26 @@
+{
+  "name": "@ryanforever/ngrok",
+  "version": "1.0.2",
+  "description": "ngrok wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "publish": "npm i && npm version patch --no-git-tag-version && npm i && git add --all && git commit -m 'auto-build via npm' && git push origin --all && npm publish"
+  },
+  "author": "ryan forever",
+  "license": "ISC",
+  "keywords": [
+    "ngrok"
+  ],
+  "dependencies": {
+    "@ryanforever/logger": "^6.0.13",
+    "@ryanforever/notify": "^1.0.7",
+    "ngrok": "^5.0.0-beta.2"
+  },
+  "devDependencies": {
+    "dotenv": "^17.2.3"
+  },
+  "files": [
+    "src"
+  ]
+}
