@@ -1,6 +1,6 @@
 {
   "name": "@ryanforever/ngrok",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ngrok wrapper",
   "main": "index.js",
   "scripts": {

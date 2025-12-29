@@ -6,11 +6,7 @@ const fs = require("fs")
 const path = require("path")
 const Notify = require("@ryanforever/notify")
 const os = require("os")
-const notify = new Notify({
-	user: process.env.PUSHOVER_USER,
-	token: process.env.PUSHOVER_TOKEN,
-	appName: "botlab"
-})
+
 
 const title = `
 ########################
@@ -23,7 +19,7 @@ function Ngrok(config = {}) {
 	const logger = new Logger("ngrok", {debug: config.debug ?? false})
 
 	const token = config.token
-	
+
 	this.hostname = os.hostname().replace(/\.local/,"").toLowerCase().trim()
 	this.tunnels = []
 
