@@ -1,6 +1,4 @@
 
-
-
 const ngrok = require("ngrok")
 const Logger = require("@ryanforever/logger").v4
 const logger = new Logger(__filename, {debug: true})
@@ -14,7 +12,7 @@ const notify = new Notify({
 	appName: "botlab"
 })
 
-let title = `
+const title = `
 ########################
 ######## NGROK #########
 ########################
@@ -25,6 +23,7 @@ function Ngrok(config = {}) {
 	const logger = new Logger("ngrok", {debug: config.debug ?? false})
 
 	const token = config.token
+	
 	this.hostname = os.hostname().replace(/\.local/,"").toLowerCase().trim()
 	this.tunnels = []
 
